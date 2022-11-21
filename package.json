@@ -1,0 +1,24 @@
+{
+  "name": "semantic-release-docker-gitlab-ci",
+  "version": "0.0.0",
+  "description": "semantic-release plugin to publish Docker containers to GitLab Container Registry",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaibloecker/semantic-release-docker-gitlab-ci.git"
+  },
+  "keywords": [
+    "semantic-release",
+    "docker",
+    "gitlab"
+  ],
+  "author": "Kai Blöcker <kai@bloecker.dev>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kaibloecker/semantic-release-docker-gitlab-ci/issues"
+  },
+  "homepage": "https://github.com/kaibloecker/semantic-release-docker-gitlab-ci#readme"
+}
