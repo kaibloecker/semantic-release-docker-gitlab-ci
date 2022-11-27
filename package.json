@@ -1,10 +1,15 @@
 {
   "name": "semantic-release-docker-gitlab-ci",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "semantic-release plugin to publish Docker containers to GitLab Container Registry",
   "main": "index.js",
+  "files": [
+    "src",
+    "index.js"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "is-ci || husky install"
   },
   "repository": {
     "type": "git",
@@ -13,12 +18,51 @@
   "keywords": [
     "semantic-release",
     "docker",
-    "gitlab"
+    "gitlab",
+    "version",
+    "publish"
   ],
   "author": "Kai Blöcker <kai@bloecker.dev>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/kaibloecker/semantic-release-docker-gitlab-ci/issues"
   },
-  "homepage": "https://github.com/kaibloecker/semantic-release-docker-gitlab-ci#readme"
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://github.com/kaibloecker/semantic-release-docker-gitlab-ci#readme",
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "!*.{js,jsx,ts,tsx}": "prettier --write --ignore-unknown",
+    "*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "eslint --max-warnings=0"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "conventional-changelog-conventionalcommits": "^5.0.0",
+    "eslint": "^8.28.0",
+    "eslint-config-prettier": "^8.5.0",
+    "husky": "^8.0.2",
+    "is-ci": "^3.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "2.7.1",
+    "semantic-release": "^19.0.5"
+  },
+  "dependencies": {
+    "@semantic-release/error": "^3.0.0",
+    "got": "^11.8.5",
+    "semver": "^7.3.8"
+  },
+  "peerDependencies": {
+    "semantic-release": ">=19.0.0"
+  }
 }
