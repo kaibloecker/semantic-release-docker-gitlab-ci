@@ -64,5 +64,15 @@
   },
   "peerDependencies": {
     "semantic-release": ">=19.0.0"
-  }
+  },
+  "funding": [
+    {
+      "type": "liberapay",
+      "url": "https://liberapay.com/kaibloecker"
+    },
+    {
+      "type": "buymeacoffee",
+      "url": "https://www.buymeacoffee.com/kaibloecker"
+    }
+  ]
 }
