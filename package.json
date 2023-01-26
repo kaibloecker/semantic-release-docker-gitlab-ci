@@ -67,6 +67,10 @@
   },
   "funding": [
     {
+      "type": "github",
+      "url": "https://github.com/sponsors/kaibloecker"
+    },
+    {
       "type": "liberapay",
       "url": "https://liberapay.com/kaibloecker"
     },
