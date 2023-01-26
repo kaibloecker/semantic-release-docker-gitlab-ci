@@ -59,7 +59,7 @@
   },
   "dependencies": {
     "@semantic-release/error": "^3.0.0",
-    "got": "^11.8.5",
+    "got": "^12.5.3",
     "semver": "^7.3.8"
   },
   "peerDependencies": {
