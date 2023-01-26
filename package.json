@@ -1,6 +1,6 @@
 {
   "name": "semantic-release-docker-gitlab-ci",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "semantic-release plugin to publish Docker containers to GitLab Container Registry",
   "main": "index.js",
   "files": [
