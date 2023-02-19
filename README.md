@@ -105,7 +105,9 @@ This section is just to document the environment variables used by the plugin. A
 
 ### Options
 
-As of now, there are no options.
+| Option   | Description                                                  | Type      | Default Value |
+| -------- | ------------------------------------------------------------ | --------- | ------------- |
+| `semver` | Publish only a valid semantic version number. Example: 1.1.1 | `boolean` | `false`       |
 
 ## Contributing
 
