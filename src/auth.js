@@ -1,4 +1,4 @@
-const got = require('got');
+import got from 'got';
 
 const extractRealm = function (headers) {
   const options = headers
@@ -24,7 +24,7 @@ const getRealm = async function (url) {
   }
 };
 
-module.exports = async (
+export default async (
   REGISTRY,
   PROJECT_PATH,
   TAG,

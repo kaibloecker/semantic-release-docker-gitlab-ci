@@ -1,5 +1,5 @@
-const verify = require('./src/verify');
-const publish = require('./src/publish');
+import verify from './src/verify.js';
+import publish from './src/publish.js';
 
 // eslint-disable-next-line no-unused-vars
 let verified;
@@ -14,4 +14,4 @@ async function verifyConditions(pluginConfig, context) {
   verified = true;
 }
 
-module.exports = { verifyConditions, publish };
+export default { verifyConditions, publish };

@@ -1,8 +1,8 @@
-const got = require('got');
-const login = require('./auth');
-const SemanticReleaseError = require('@semantic-release/error');
+import got from 'got';
+import login from './auth.js';
+import SemanticReleaseError from '@semantic-release/error';
 
-module.exports = async (pluginConfig, context) => {
+export default async (pluginConfig, context) => {
   const { logger } = context;
   const errors = [];
   const {
