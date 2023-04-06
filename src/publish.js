@@ -1,7 +1,7 @@
-const got = require('got');
-const semver = require('semver');
-const login = require('./auth');
-const SemanticReleaseError = require('@semantic-release/error');
+import got from 'got';
+import semver from 'semver';
+import login from './auth.js';
+import SemanticReleaseError from '@semantic-release/error';
 
 const CONTENT_TYPE = 'application/vnd.docker.distribution.manifest.v2+json';
 
@@ -49,7 +49,7 @@ const pushTag = async function (url, Authorization, manifest) {
   }
 };
 
-module.exports = async (pluginConfig, context) => {
+export default async (pluginConfig, context) => {
   const errors = [];
   const {
     CI_REGISTRY,
